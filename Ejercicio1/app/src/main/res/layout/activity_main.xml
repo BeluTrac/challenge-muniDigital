@@ -18,7 +18,10 @@
             android:layout_height="wrap_content"
             android:layout_above="@+id/editText"
             android:layout_centerHorizontal="true"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center_horizontal"/>
 
         <EditText
             android:id="@+id/editText"
@@ -32,7 +35,9 @@
             android:textCursorDrawable="@color/purple_500"
             android:inputType="text"
             tools:text="Hola"
-            android:autofillHints="" />
+            android:autofillHints=""
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
 
 
         <Button
