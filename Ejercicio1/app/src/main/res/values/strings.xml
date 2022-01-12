@@ -3,4 +3,7 @@
     <string name="save_info">Guardar info</string>
     <string name="launch_activity">Lanzar activity</string>
     <string name="write_here">Escribe aqui</string>
+    <string name="the_text_saved_is">El texto guardado es %s</string>
+    <string name="The_text_loaded_in_the_previous_view_was">El texto cargado en la vista anterior fue: %s </string>
+    <string name="there_is_no_text_loaded_in_the_previous_view">No hay un texto cargado en la vista anterior.</string>
 </resources>

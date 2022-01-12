@@ -1,46 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:padding="16dp">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:id="@+id/saveWordText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/editText"
-        android:layout_centerHorizontal="true"
-        />
+    <data>
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="@string/write_here"
-        android:padding="16dp"
-        android:layout_above="@+id/saveButton"
-        android:layout_centerHorizontal="true"
-        />
+    </data>
 
-   <Button
-       android:id="@+id/saveButton"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="@string/save_info"
-       android:layout_centerInParent="true"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:padding="16dp">
 
-    />
+        <TextView
+            android:id="@+id/saveWordText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editText"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"/>
 
-    <Button
-        android:id="@+id/launchButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/launch_activity"
-        android:layout_below="@+id/saveButton"
-        android:layout_centerHorizontal="true"
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/write_here"
+            android:padding="16dp"
+            android:layout_above="@+id/saveButton"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/purple_500"
+            android:textCursorDrawable="@color/purple_500"
+            android:inputType="text"
+            tools:text="Hola"
+            android:autofillHints="" />
 
-        />
-</RelativeLayout>
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_info"
+            android:layout_centerInParent="true"
+
+            />
+
+        <Button
+            android:id="@+id/launchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/launch_activity"
+            android:layout_below="@+id/saveButton"
+            android:layout_centerHorizontal="true"
+
+            />
+    </RelativeLayout>
+</layout>
