@@ -12,7 +12,11 @@ class MainViewModel : ViewModel() {
 
     fun setWord(word :String)
     {
-        _wordSaved.value = word
+        if(!word.isEmpty())
+        {
+            _wordSaved.value = word
+        }
+
     }
 
 

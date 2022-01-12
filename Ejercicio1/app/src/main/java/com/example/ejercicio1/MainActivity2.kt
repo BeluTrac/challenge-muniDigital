@@ -16,7 +16,7 @@ class MainActivity2 : AppCompatActivity() {
         setContentView(binding.root)
         val text = intent.extras?.getString(TEXT_KEY)
 
-        if (text != null) {
+
             if(text.isNullOrEmpty())
             {
                 binding.wordText.text = getString(R.string.there_is_no_text_loaded_in_the_previous_view)
@@ -24,7 +24,7 @@ class MainActivity2 : AppCompatActivity() {
             {
                 binding.wordText.text =  getString(R.string.The_text_loaded_in_the_previous_view_was,text)
             }
-        }
+
 
 
     }

@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.saveButton.setOnClickListener {
            viewModel.setWord(binding.editText.text.toString())
+              
         }
     }
 
